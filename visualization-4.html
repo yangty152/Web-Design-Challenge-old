@@ -6,25 +6,81 @@
         <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
         <link rel="stylesheet" href="style.css">
     </head>
-    <body>
-    <div class ="container">
+    <body style="background-color: lightsteelblue;">
         <!--first row to contain title and navigation-->
-        <div class = "row">
-            <h1>Latitude</h1>
+        <div class = "container display: flex">
+        <div class = "row" style = "background-color: white;">
+            <div class ="col-md-2" style = "background-color:wheat">
+                <h4>Latitude</h4>
+            </div>
+            <div class ="col-md-10">
+                <nav class="navbar navbar-expand-lg navbar-light bg-light">  
+                        <ul class="nav justify-content-center">
+                            <li class="nav-item dropdown">
+                                <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                                Plots
+                                </a>
+                                <div class="dropdown-menu" aria-labelledby="navbarDropdown">
+                                <a class="dropdown-item" href="/visualization-1.html">Visualization 1</a>
+                                <a class="dropdown-item" href="/visualization-2.html">Visualization 2</a>
+                                <a class="dropdown-item" href="/visualization-3.html">Visualization 3</a>
+                                <a class="dropdown-item" href="/visualization-4.html">Visualization 4</a>
+                                </div>
+                            </li>
+                            <li class="nav-item active">
+                                <a class="nav-link" href="/data.html">Data</a>
+                            </li>
+                            <li class="nav-item">
+                                <a class="nav-link" href="/comparison.html">Comparison</a>
+                            </li>
+                        </ul>
+                </nav>
+            </div>
         </div>
-        <!--second row to contain summary and visualizations-->
-        <div class = "row">
-            <div class="col-md-8">
+        </div>
+        <div class ="container">
+        <div class = "row mt-5 justify-content-between">
+            <div class="col-md-7" style = "background-color:white;">
+                <h1>Max Temperature</h1>
+                <hr/>
+                <h5><img src="\Resources\assets\images\Fig1.png" class="img-responsive" width = "500" height = "350" alt="...">The purpose of this projet was to analyze how weather changes as you get closer to the equator. To accomplish this analysis, we first pulled data from the OpenWeatherMap API to assemble a dataset on over 500 cities</h5>
+                <h5> After assembling the datasset, we used Matplotlib to plot various aspects of the weather vs. latitude. Factors we looked at included: temperature, cloudiness wind speed, and humidity. This site provides the source data and visualizations created as part of the analysis, as well as explanations and descriptions of any trends and correlations witnessed.</h5>
+            </div>
+            <div class="col-md-4" style = "background-color:white;">
+                <div class="row">
+                    <div>
+                        <h1>Visualizations</h1>
+                        <hr/>
+                        <div class="w-100"></div>
+                    </div>
+                </div>
+                <div class="row">
+                    <div class = "col-md-6">
+                            <a href="/visualization-1.html">
+                        <img src="\Resources\assets\images\Fig1.png" alt="Lights" class="img-thumbnail">
+                            </a>
+                    </div>
+                    <div class = "col-md-6">
+                        <a href="/visualization-2.html">
+                          <img src="\Resources\assets\images\Fig2.png" alt="Lights" class="img-thumbnail">
+                        </a>
+                    </div>
+                </div>
+                <div class="row">
+                    <div class = "col-md-6">
+                            <a href="/visualization-3.html">
+                              <img src="\Resources\assets\images\Fig3.png" class="img-thumbnail" alt="Lights">
+                            </a>
+                    </div>
+                    <div class = "col-md-6">
+                            <a href="/visualization-4.html">
+                              <img src="\Resources\assets\images\Fig4.png" class="img-thumbnail border border-secondary rounded" alt="Lights">
+                            </a>
+                    </div>
+                </div>
+            </div>
+        </div>
                 
-                <h1>Summary: Latitude vs. X</h1>
-                <p><img src="\Resources\assets\images\Fig1.png" class="img-thumbnail" alt="...">The purpose of this projet was to analyze how weather changes as you get closer to the equator. To accomplish this analysis, we first pulled data from the OpenWeatherMap API to assemble a dataset on over 500 cities</p>
-                <P>After assembling the datasset, we used Matplotlib to plot various aspects of the weather vs. latitude. Factors we looked at included: temperature, cloudiness wind speed, and humidity. This site provides the source data and visualizations created as part of the analysis, as well as explanations and descriptions of any trends and correlations witnessed.</P>
-            </div>
-            <div class="col-md-4">
-                <h1>Visualizations</h1>
-            </div>
-        </div>
-        
     </div>
     </body>
 </html>
