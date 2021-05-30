@@ -2,29 +2,25 @@
 <html lang="en">
     <head>
         <meta charset="UTF-8">
-        <title>Langing-Page</title>
+        <title>Wind Speed</title>
         <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
         <link rel="stylesheet" href="style.css">
     </head>
-    <body style="background-color: lightsteelblue;">
+    <body style="background-color:rgb(241, 237, 211);">
         <!--first row to contain title and navigation-->
-        <div class = "container display: flex">
-        <div class = "row" style = "background-color: white;">
-            <div class ="col-md-2" style = "background-color:wheat">
-                <h4>Latitude</h4>
-            </div>
-            <div class ="col-md-10">
-                <nav class="navbar navbar-expand-lg navbar-light bg-light">  
-                        <ul class="nav justify-content-center">
+        <div class = "d-flex flex-column flex-md-row align-items-center p-3 px-md-4 mb-3 bg-white border-bottom box-shadow"> 
+            <h4 class="my-0 mr-md-auto font-weight-normal">Latitude</h4>
+                <nav class="my-2 my-md-0 mr-md-3">  
+                        <ul class="nav">
                             <li class="nav-item dropdown">
                                 <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
                                 Plots
                                 </a>
-                                <div class="dropdown-menu" aria-labelledby="navbarDropdown">
-                                <a class="dropdown-item" href="/visualization-1.html">Visualization 1</a>
-                                <a class="dropdown-item" href="/visualization-2.html">Visualization 2</a>
-                                <a class="dropdown-item" href="/visualization-3.html">Visualization 3</a>
-                                <a class="dropdown-item" href="/visualization-4.html">Visualization 4</a>
+                                <div class="dropdown-menu">
+                                <a class="dropdown-item" href="/visualization-1.html">Max Temperature</a>
+                                <a class="dropdown-item" href="/visualization-2.html">Humidity</a>
+                                <a class="dropdown-item" href="/visualization-3.html">Cloudiness</a>
+                                <a class="dropdown-item" href="/visualization-4.html">Wind Speed</a>
                                 </div>
                             </li>
                             <li class="nav-item active">
@@ -35,46 +31,42 @@
                             </li>
                         </ul>
                 </nav>
-            </div>
         </div>
-        </div>
-        <div class ="container">
-        <div class = "row mt-5 justify-content-between">
-            <div class="col-md-7" style = "background-color:white;">
-                <h1>Max Temperature</h1>
-                <hr/>
-                <h5><img src="\Resources\assets\images\Fig1.png" class="img-responsive" width = "500" height = "350" alt="...">The purpose of this projet was to analyze how weather changes as you get closer to the equator. To accomplish this analysis, we first pulled data from the OpenWeatherMap API to assemble a dataset on over 500 cities</h5>
-                <h5> After assembling the datasset, we used Matplotlib to plot various aspects of the weather vs. latitude. Factors we looked at included: temperature, cloudiness wind speed, and humidity. This site provides the source data and visualizations created as part of the analysis, as well as explanations and descriptions of any trends and correlations witnessed.</h5>
+        <div class ="container overflow-hidden">
+        <div class = "row gx-5 mt-5 justify-content-between">
+            <div class="col-md-8 col-sm-12">
+                <div class="p-3 bg-light">
+                <h1 class = "display-5 p-3">Wind Speed</h1>
+                <img src="\Resources\assets\images\Fig4.png" class="img-responsive" width = "600" height = "450" alt="Wind Speed">
+                <h5 class = "display-6 p-3">This scatter plot shows the relationship between Max Temperature and Latitude</h5>
+                <h5 class = "p-3"> </h5>
             </div>
-            <div class="col-md-4" style = "background-color:white;">
+            </div>
+            <div class="col-md-4 bg-light">
                 <div class="row">
                     <div>
-                        <h1>Visualizations</h1>
-                        <hr/>
-                        <div class="w-100"></div>
+                        <h1 class = "display-5 p-3">Visualizations</h1>
                     </div>
                 </div>
                 <div class="row">
-                    <div class = "col-md-6">
+                    <div class = "col-md-6 col-sm-3 p-3">
                             <a href="/visualization-1.html">
-                        <img src="\Resources\assets\images\Fig1.png" alt="Lights" class="img-thumbnail">
+                            <img class = "thumbnail" src="\Resources\assets\images\Fig1.png" alt="Max Temperature">
                             </a>
                     </div>
-                    <div class = "col-md-6">
+                    <div class = "col-md-6 col-sm-3 p-3">
                         <a href="/visualization-2.html">
-                          <img src="\Resources\assets\images\Fig2.png" alt="Lights" class="img-thumbnail">
+                          <img class = "thumbnail" src="\Resources\assets\images\Fig2.png" alt="Humidity">
                         </a>
-                    </div>
-                </div>
-                <div class="row">
-                    <div class = "col-md-6">
+                    </div>            
+                    <div class = "col-md-6 col-sm-3 p-3">
                             <a href="/visualization-3.html">
-                              <img src="\Resources\assets\images\Fig3.png" class="img-thumbnail" alt="Lights">
+                              <img class = "thumbnail" src="\Resources\assets\images\Fig3.png" alt="Cloudiness">
                             </a>
                     </div>
-                    <div class = "col-md-6">
+                    <div class = "col-md-6 col-sm-3 p-3">
                             <a href="/visualization-4.html">
-                              <img src="\Resources\assets\images\Fig4.png" class="img-thumbnail border border-secondary rounded" alt="Lights">
+                              <img class = "thumbnail border border-secondary rounded" src="\Resources\assets\images\Fig4.png" alt="Wind Speed">
                             </a>
                     </div>
                 </div>

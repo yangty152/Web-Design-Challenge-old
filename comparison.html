@@ -2,26 +2,70 @@
 <html lang="en">
     <head>
         <meta charset="UTF-8">
-        <title>Langing-Page</title>
+        <title>Comparison</title>
         <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
         <link rel="stylesheet" href="style.css">
     </head>
-    <body>
-    <div class ="container">
+    <body style="background-color:rgb(241, 237, 211);">
         <!--first row to contain title and navigation-->
-        <div class = "row">
-            <p>title</p>
+        <div class = "d-flex flex-column flex-md-row align-items-center p-3 px-md-4 mb-3 bg-white border-bottom box-shadow"> 
+            <h4 class="my-0 mr-md-auto font-weight-normal">Latitude</h4>
+                <nav class="my-2 my-md-0 mr-md-3">  
+                        <ul class="nav">
+                            <li class="nav-item dropdown">
+                                <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                                Plots
+                                </a>
+                                <div class="dropdown-menu">
+                                <a class="dropdown-item" href="/visualization-1.html">Max Temperature</a>
+                                <a class="dropdown-item" href="/visualization-2.html">Humidity</a>
+                                <a class="dropdown-item" href="/visualization-3.html">Cloudiness</a>
+                                <a class="dropdown-item" href="/visualization-4.html">Wind Speed</a>
+                                </div>
+                            </li>
+                            <li class="nav-item active">
+                                <a class="nav-link" href="/data.html">Data</a>
+                            </li>
+                            <li class="nav-item">
+                                <a class="nav-link" href="/comparison.html">Comparison</a>
+                            </li>
+                        </ul>
+                </nav>
         </div>
-        <!--second row to contain summary and visualizations-->
-        <div class = "row">
-            <div class="col-md-8">
-                <h1>Summary</h1>
+        <div class ="container">
+            <div class="p-3 bg-light">
+                <h1 class = "display-5 p-3">Comparison: Latitude vs X</h1>
+                <hr/>
+                <p> Click any plot to get an in-depth analysis</p>
+                <div class="row">
+                    <div class = "col-md-6 col-sm-3 p3">
+                        <h6 class = "display-5" style = "text-align: center;">Max Temperature</h6>
+                        <a href="/visualization-1.html">
+                            <img class = "img-fluid" src="\Resources\assets\images\Fig1.png" alt="Max Temperature">
+                        </a>
+                    </div>
+                    <div class = "col-md-6 col-sm-3 p3">
+                        <h6 class = "display-5" style = "text-align: center;">Humidity</h6>
+                        <a href="/visualization-2.html">
+                            <img class = "img-fluid" src="\Resources\assets\images\Fig2.png" alt="Humidity">
+                        </a>
+                    </div>            
+                </div>
+                <div class="row">
+                    <div class = "col-md-6 col-sm-3 p3">
+                        <h6 class = "display-5" style = "text-align: center;">Cloudiness</h6>
+                        <a href="/visualization-3.html">
+                            <img class = "img-fluid" src="\Resources\assets\images\Fig3.png" alt="Cloudiness">
+                        </a>
+                    </div>
+                    <div class = "col-md-6 col-sm-3 p3">
+                        <h6 class = "display-5" style = "text-align: center;">Wind Speed</h6>
+                        <a href="/visualization-4.html">
+                            <img class = "img-fluid" src="\Resources\assets\images\Fig4.png" alt="Wind Speed">
+                        </a>
+                    </div>
+                </div>
             </div>
-            <div class="col-md-4">
-                <h1>Visualizations</h1>
-            </div>
-        </div>
-        
-    </div>
+        </div>              
     </body>
 </html>
