@@ -4,9 +4,4 @@ height: 150px;
 border: 0.1mm;
 }
 
-
-.graph {
-    width: 300px;
-    height: 250px;
-    border: 0.1mm;
-    }
+.container { width: auto; }
