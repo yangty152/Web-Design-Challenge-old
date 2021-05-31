@@ -6,73 +6,83 @@
         <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
         <link rel="stylesheet" href="style.css">
     </head>
-    <body style="background-color:rgb(241, 237, 211);">
-        <!--first row to contain title and navigation-->
-        <div class = "d-flex flex-column flex-md-row align-items-center p-3 px-md-4 mb-3 bg-white border-bottom box-shadow"> 
-            <h4 class="my-0 mr-md-auto font-weight-normal">Latitude</h4>
-                <nav class="my-2 my-md-0 mr-md-3">  
-                        <ul class="nav">
-                            <li class="nav-item dropdown">
-                                <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
-                                Plots
-                                </a>
-                                <div class="dropdown-menu">
-                                <a class="dropdown-item" href="/visualization-1.html">Max Temperature</a>
-                                <a class="dropdown-item" href="/visualization-2.html">Humidity</a>
-                                <a class="dropdown-item" href="/visualization-3.html">Cloudiness</a>
-                                <a class="dropdown-item" href="/visualization-4.html">Wind Speed</a>
-                                </div>
-                            </li>
-                            <li class="nav-item active">
-                                <a class="nav-link" href="/data.html">Data</a>
-                            </li>
-                            <li class="nav-item">
-                                <a class="nav-link" href="/comparison.html">Comparison</a>
-                            </li>
-                        </ul>
-                </nav>
+    <body style="background-color:rgb(241, 237, 211);">        
+        <div class="d-flex flex-column flex-md-row align-items-center p-3 mb-5 bg-white border-bottom box-shadow">         
+                <nav class ="navbar navbar-expand-md navbar-light my-0 my-md-0 mr-md-3">
+                        <a class= "navbar-brand" href="index.html">Latitude</a>
+                        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarCollapse" aria-controls="navbarCollapse" aria-expanded="true" aria-label="Toggle navigation">
+                            <span class="navbar-toggler-icon"></span>
+                        </button>
+                        <div class="navbar-collapse collapse show" id="navbarCollapse" style>
+                            <ul class="navbar-nav mr-auto">
+                                <li class="nav-item dropdown active">
+                                    <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                                    Plots
+                                    </a>
+                                    <div class="dropdown-menu">
+                                    <a class="dropdown-item" href="/visualization-1.html">Max Temperature</a>
+                                    <a class="dropdown-item" href="/visualization-2.html">Humidity</a>
+                                    <a class="dropdown-item" href="/visualization-3.html">Cloudiness</a>
+                                    <a class="dropdown-item" href="/visualization-4.html">Wind Speed</a>
+                                    </div>
+                                </li>
+                                <li class="nav-item">
+                                    <a class="nav-link" href="/data.html">Data</a>
+                                </li>
+                                <li class="nav-item">
+                                    <a class="nav-link" href="/comparison.html">Comparison</a>
+                                </li>
+                            </ul>
+                        </div>
+                    </nav>
         </div>
-        <div class ="container overflow-hidden">
-        <div class = "row gx-5 mt-5 justify-content-between">
-            <div class="col-md-8 col-sm-12">
-                <div class="p-3 bg-light">
+        <div class ="container">
+        <div class = "row mt-auto">
+            <div class="col-ls-8 col-md-8 col-sm-12">
+                <div class="p-6 bg-light">
                 <h1 class = "display-5 p-3">Humidity</h1>
-                <img src="\Resources\assets\images\Fig2.png" class="img-responsive" width = "600" height = "450" alt="Humidity">
-                <h5 class = "display-6 p-3">This scatter plot shows the relationship between Max Temperature and Latitude</h5>
-                <h5 class = "p-3"> </h5>
+                <p class = "display-6 p-3"><img src="\Resources\assets\images\Fig2.png" class="img-responsive" width = "400" height = "300" style = "float:left" alt="...">The purpose of this projet was to analyze how weather changes as you get closer to the equator. To accomplish this analysis, we first pulled data from the OpenWeatherMap API to assemble a dataset on over 500 cities</p>
+                <p class = "p-3">After assembling the datasset, we used Matplotlib to plot various aspects of the weather vs. latitude. Factors we looked at included: temperature, cloudiness wind speed, and humidity. This site provides the source data and visualizations created as part of the analysis, as well as explanations and descriptions of any trends and correlations witnessed.</p>
+                </div>
             </div>
-            </div>
-            <div class="col-md-4 bg-light">
+            <div class="col-ls-4 col-md-4 col-sm-12">
+                <div class="p-6 bg-light">
                 <div class="row">
-                    <div>
                         <h1 class = "display-5 p-3">Visualizations</h1>
-                    </div>
                 </div>
                 <div class="row">
                     <div class = "col-md-6 col-sm-3 p-3">
+                        <div class="thumbnail">
                             <a href="/visualization-1.html">
                             <img class = "thumbnail" src="\Resources\assets\images\Fig1.png" alt="Max Temperature">
                             </a>
+                        </div>
                     </div>
                     <div class = "col-md-6 col-sm-3 p-3">
+                        <div class="thumbnail">
                         <a href="/visualization-2.html">
-                          <img class = "thumbnail border border-secondary rounded" src="\Resources\assets\images\Fig2.png" alt="Humidity">
+                          <img class = "thumbnail  border border-secondary rounded" src="\Resources\assets\images\Fig2.png" alt="Humidity">
                         </a>
+                        </div>
                     </div>            
                     <div class = "col-md-6 col-sm-3 p-3">
+                        <div class="thumbnail">
                             <a href="/visualization-3.html">
                               <img class = "thumbnail" src="\Resources\assets\images\Fig3.png" alt="Cloudiness">
                             </a>
+                        </div>
                     </div>
                     <div class = "col-md-6 col-sm-3 p-3">
+                        <div class="thumbnail">
                             <a href="/visualization-4.html">
                               <img class = "thumbnail" src="\Resources\assets\images\Fig4.png" alt="Wind Speed">
                             </a>
+                        </div>
                     </div>
                 </div>
+                </div>
             </div>
-        </div>
-                
+        </div>           
     </div>
     <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
 <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js" integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1" crossorigin="anonymous"></script>
