@@ -4,4 +4,47 @@ height: 150px;
 border: 0.1mm;
 }
 
-.container { width: auto; }
+.container {width: auto; }
+/* Giving our navbar some padding and a background color */
+  /* Making our navbar li's inline-block elements this makes it so we can have multiple on the same line. Floats could have been used too */
+  .navbar li {
+    display: inline-block;
+    padding: 0px;
+    margin-right: 10px;
+    margin-left: 10px;
+    cursor: pointer;
+    background: #fff;
+    border-radius: 3px;
+  }
+
+  #nav-select {
+    visibility: hidden;
+  }
+  
+  /* Getting rid of the default link styles here */
+  .navbar li a {
+    color: #000;
+    text-decoration: none;
+  }
+
+  
+  /* Adding media queries to show the drop-down, and hide the navbar when the screen is smaller than 480 pixels */
+  @media (max-width: 600px) {
+    .navbar li {
+      padding: 10px;
+    }
+  
+    .post {
+      margin-right: 30px;
+      margin-left: 30px;
+    }
+  
+    .navbar ul {
+      visibility: hidden;
+    }
+  
+    #nav-select {
+      visibility: visible;
+    }
+  }
+  
