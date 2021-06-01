@@ -1,6 +1,3 @@
 # Web-Design-Challenge
 
-issue -
-thumbnail overflow the row when shrink the broswer
-drop down doesn't work
-small screen menu doesn't function fully
+This folder contains html files, one css stylesheet, and images used in the website in the resosurces folder. 
