@@ -6,7 +6,7 @@
         <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
         <link rel="stylesheet" href="style.css">
     </head>
-    <body style="background-color:rgb(241, 237, 211);">
+    <body>
         <div class="d-flex flex-column flex-md-row align-items-center p-3 mb-5 bg-white border-bottom box-shadow">         
             <nav class ="navbar navbar-expand-md navbar-light my-0 my-md-0 mr-md-3">
                     <a class= "navbar-brand" href="index.html">Latitude</a>
@@ -15,7 +15,7 @@
                     </button>
                     <div class="navbar-collapse collapse show" id="navbarCollapse" style>
                         <ul class="navbar-nav mr-auto">
-                            <li class="nav-item dropdown active">
+                            <li class="nav-item dropdown">
                                 <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
                                 Plots
                                 </a>
@@ -29,27 +29,27 @@
                             <li class="nav-item">
                                 <a class="nav-link" href="/data.html">Data</a>
                             </li>
-                            <li class="nav-item">
+                            <li class="nav-item active">
                                 <a class="nav-link" href="/comparison.html">Comparison</a>
                             </li>
                         </ul>
                     </div>
                 </nav>
         </div>
-        <div class ="container">
+        <div class ="container-fluid">
             <div class="p-3 bg-light">
                 <h1 class = "display-5 p-3">Comparison: Latitude vs X</h1>
                 <hr/>
                 <p> Click any plot to get an in-depth analysis</p>
                 <div class="row">
                     <div class = "col-md-6 p3">
-                        <h6 class = "display-5" style = "text-align: center;">vs. Max Temperature</h6>
+                        <h6>vs. Max Temperature</h6>
                         <a href="/visualization-1.html">
                             <img class = "img-fluid" src="\Resources\assets\images\Fig1.png" alt="Max Temperature">
                         </a>
                     </div>
                     <div class = "col-md-6 p3">
-                        <h6 class = "display-5" style = "text-align: center;">vs. Humidity</h6>
+                        <h6>vs. Humidity</h6>
                         <a href="/visualization-2.html">
                             <img class = "img-fluid" src="\Resources\assets\images\Fig2.png" alt="Humidity">
                         </a>
@@ -57,13 +57,13 @@
                 </div>
                 <div class="row">
                     <div class = "col-md-6 p3">
-                        <h6 class = "display-5" style = "text-align: center;">vs. Cloudiness</h6>
+                        <h6>vs. Cloudiness</h6>
                         <a href="/visualization-3.html">
                             <img class = "img-fluid" src="\Resources\assets\images\Fig3.png" alt="Cloudiness">
                         </a>
                     </div>
                     <div class = "col-md-6 p3">
-                        <h6 class = "display-5" style = "text-align: center;">vs. Wind Speed</h6>
+                        <h6>vs. Wind Speed</h6>
                         <a href="/visualization-4.html">
                             <img class = "img-fluid" src="\Resources\assets\images\Fig4.png" alt="Wind Speed">
                         </a>
